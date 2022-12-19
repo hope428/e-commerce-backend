@@ -31,6 +31,18 @@ const productData = [
     stock: 22,
     category_id: 2,
   },
+  {
+    product_name: 'Denim Shorts',
+    price: 39.99,
+    stock: 15,
+    category_id: 2,
+  },
+  {
+    product_name: 'Running Shorts',
+    price: 16.99,
+    stock: 5,
+    category_id: 2,
+  },
 ];
 
 const seedProducts = () => Product.bulkCreate(productData);
