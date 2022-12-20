@@ -25,6 +25,10 @@ router.get("/:id", async (req, res) => {
     const products = await Product.findByPk(req.params.id, {
       include: [{ model: Category }, { model: Tag }],
     });
+    if(!products){
+      res.status(404).json("Couldn't find product by that id!")
+      return;
+    }
     res.status(200).json(products);
   } catch (err) {
     res.json(err);
@@ -113,6 +117,10 @@ router.delete("/:id", async (req, res) => {
         id: req.params.id,
       },
     });
+    if(!deletedProduct){
+      res.status(404).json("No product found by that id")
+      return;
+    }
     res.status(200).json(deletedProduct);
   } catch (err) {
     res.status(400).json(err);
