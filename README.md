@@ -17,7 +17,7 @@ npm i (or npm install)
 
 ## Usage
 
-[Link to walkthrough video](https://drive.google.com/file/d/1mOXzn9NdFEsga_ju0WltN0KVv4bDtSOv/view)
+[Link to walkthrough video](https://drive.google.com/file/d/15B3DpO29AClV1AHz3YYYxpkWSjNjgTMH/view)
 
 Before you start, you will need to create a .env file and define your environment variables.<br/>
 Then, you will need to sign into your mysql shell and run
